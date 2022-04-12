@@ -27,5 +27,5 @@ This command generates static content into the `build` directory and can be serv
 ### Test build
 
 ```
-$ npm run server
+$ npm run serve
 ```
