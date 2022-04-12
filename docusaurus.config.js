@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "jgresham", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "nice-node-docs", // Usually your repo name.
 
   presets: [
     [
@@ -47,6 +47,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Twitter card image
+      image: "img/icon.png",
       navbar: {
         title: "NiceNode",
         logo: {
