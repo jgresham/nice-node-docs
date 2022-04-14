@@ -47,8 +47,27 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: "support_us",
+        content:
+          "NiceNode is in alpha! We are looking for early testers and contributors. Please reach out on Twitter or Github!",
+        backgroundColor: "#7a2c9e",
+        textColor: "white",
+        isCloseable: false,
+      },
       // Twitter card image
-      image: "img/icon.png",
+      image: "img/NN_Twitter_Large_card.png",
+      metadata: [
+        {
+          name: "twitter:title",
+          content: "NiceNode",
+        },
+        {
+          name: "twitter:description",
+          content:
+            "An app to run an Ethereum node. No command line required. Easily run, control, and configure your node with NiceNode.",
+        },
+      ],
       navbar: {
         title: "NiceNode",
         logo: {
