@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import Requirements from "@site/src/components/Requirements";
 import screenshot from "@site/static/img/screenshot.png";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
@@ -19,7 +20,11 @@ function HomepageHeader() {
         <img
           src={screenshot}
           alt="NiceNode screenshot"
-          style={{ maxHeight: 350, marginBottom: 20 }}
+          style={{
+            maxHeight: 350,
+            marginBottom: 20,
+            boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+          }}
         />
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/downloads">
@@ -41,6 +46,8 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <hr></hr>
+        <Requirements />
       </main>
     </Layout>
   );
