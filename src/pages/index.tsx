@@ -8,6 +8,7 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Requirements from "@site/src/components/Requirements";
 import screenshot from "@site/static/img/screenshot.png";
 import { FaCloudDownloadAlt } from "react-icons/fa";
+import Why from "../components/Why";
 
 // const screenshot = require("@site/static/img/screenshot.png");
 function HomepageHeader() {
@@ -48,6 +49,8 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
         <hr></hr>
         <Requirements />
+        <hr></hr>
+        <Why />
       </main>
     </Layout>
   );

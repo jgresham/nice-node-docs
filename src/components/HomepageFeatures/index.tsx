@@ -4,14 +4,14 @@ import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
+  imgSrc: string;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
     title: "Easy to use",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    imgSrc: require("@site/static/img/doge-computer.png").default,
     description: (
       <>
         NiceNode was designed to make it as easy as possible to run an Ethereum
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Clear controls",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    imgSrc: require("@site/static/img/desktop-eth.png").default,
     description: (
       <>
         Easy to understand controls are built into NiceNode. Run a node how you
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Live monitoring",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    imgSrc: require("@site/static/img/dao-2.png").default,
     description: (
       <>
         NiceNode shows what the node is doing at a glance. Stats like how many
@@ -42,11 +42,20 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, imgSrc, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img
+          src={imgSrc}
+          alt="People interacting with Ethereum"
+          // style={{
+          //   maxHeight: 350,
+          //   marginBottom: 20,
+          //   // boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+          // }}
+          className={styles.featureImg}
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
