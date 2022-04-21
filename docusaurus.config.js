@@ -115,14 +115,6 @@ const config = {
           {
             title: "Community",
             items: [
-              // {
-              //   label: "Stack Overflow",
-              //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              // },
-              // {
-              //   label: "Discord",
-              //   href: "https://discordapp.com/invite/docusaurus",
-              // },
               {
                 label: "Twitter",
                 href: "https://twitter.com/nicenodeapp",
@@ -137,8 +129,25 @@ const config = {
               },
             ],
           },
+          {
+            title: "Credits",
+            items: [
+              {
+                label: "Logo and image art from etehreum.org's William Tempest",
+                href: "https://ethereum.org/en/assets/#illustrations",
+              },
+              {
+                label: "App & tooling built using Electron React Boilerplate",
+                href: "https://electron-react-boilerplate.js.org/",
+              },
+              {
+                label: "Website built with Docusaurus",
+                href: "https://ethereum.org/en/assets/#illustrations",
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} NiceNode. Website built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} NiceNode.`,
       },
       prism: {
         theme: lightCodeTheme,
