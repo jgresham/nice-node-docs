@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "NiceNode",
-  tagline: "An app to run an Ethereum node",
+  tagline: "Run a node — just press start",
   url: "https://nicenode.xyz",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -50,7 +50,7 @@ const config = {
       announcementBar: {
         id: "support_us",
         content:
-          "NiceNode is in alpha! We are looking for early testers and contributors. Please reach out on Twitter or Github!",
+          "NiceNode is in alpha! We are looking for early testers and contributors. Please reach out on Twitter, Discord, or Github!",
         backgroundColor: "#7a2c9e",
         textColor: "white",
         isCloseable: false,
@@ -65,7 +65,7 @@ const config = {
         {
           name: "twitter:description",
           content:
-            "An app to run an Ethereum node. No command line required. Easily run, control, and configure your node with NiceNode.",
+            "Run a node — just press start. Easily run, control, and configure an Ethereum node with NiceNode.",
         },
       ],
       navbar: {
@@ -86,6 +86,11 @@ const config = {
           {
             href: "https://twitter.com/nicenodeapp",
             label: "Twitter",
+            position: "right",
+          },
+          {
+            href: "https://discord.gg/Juchd4th",
+            label: "Discord",
             position: "right",
           },
           {
@@ -122,15 +127,10 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/nicenodeapp",
               },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              // {
-              //   label: "Blog",
-              //   to: "/blog",
-              // },
+              {
+                href: "https://discord.gg/Juchd4th",
+                label: "Discord",
+              },
               {
                 label: "GitHub",
                 href: "https://github.com/jgresham/nice-node#readme",
@@ -138,7 +138,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} NiceNode. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} NiceNode. Website built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

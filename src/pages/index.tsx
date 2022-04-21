@@ -35,6 +35,18 @@ function HomepageHeader() {
             </div>
           </Link>
         </div>
+        <div>
+          <span>
+            Please read the{" "}
+            <Link
+              to={"#requirements"}
+              style={{ color: "white", textDecoration: "underline" }}
+            >
+              requirements
+            </Link>{" "}
+            for first-timers
+          </span>
+        </div>
       </div>
     </header>
   );
