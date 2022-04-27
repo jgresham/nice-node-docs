@@ -49,8 +49,7 @@ const config = {
     ({
       announcementBar: {
         id: "support_us",
-        content:
-          "NiceNode is in alpha! We are looking for early testers and contributors. Please reach out on Twitter, Discord, or Github!",
+        content: `<a target="_blank" rel="noopener noreferrer" href="https://mirror.xyz/johnsgresham.eth/BqQ92jtwu3hl6Ri2-giRLd0hequOt8Ya6ULAyCR-3ls">NiceNode is in alpha!</a> Early testers and contributors appreciated. Please reach out on Twitter, Discord, or Github!`,
         backgroundColor: "#7a2c9e",
         textColor: "white",
         isCloseable: false,

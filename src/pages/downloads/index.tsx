@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import styles from "../index.module.css";
@@ -8,15 +8,40 @@ import { FaApple } from "react-icons/fa";
 import screenshot from "@site/static/img/screenshot.png";
 import Requirements from "@site/src/components/Requirements";
 
-const RELEASE_VERSION = "0.5.2-alpha";
-const DOWNLOAD_BASE = "https://github.com/jgresham/nice-node/releases";
-const LINUX_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${RELEASE_VERSION}/NiceNode-${RELEASE_VERSION}.AppImage`;
-const WINDOWS_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${RELEASE_VERSION}/NiceNode-Setup-${RELEASE_VERSION}.exe`;
-const MACOS_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${RELEASE_VERSION}/NiceNode-${RELEASE_VERSION}-arm64.dmg`;
-const MACOS_INTEL_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${RELEASE_VERSION}/NiceNode-${RELEASE_VERSION}.dmg`;
-const ALL_DOWNLOADS = `${DOWNLOAD_BASE}/tag/v${RELEASE_VERSION}`;
+const DEFAULT_RELEASE_VERSION = "0.8.0-alpha";
 
 export default function Downloads() {
+  const [sFetchedLatestReleaseVersion, setFetchedLatestReleaseVersion] =
+    useState<string>();
+
+  const getLatestReleaseVersion = async () => {
+    const response = await fetch(
+      "https://api.github.com/repos/jgresham/nice-node/releases/latest"
+    );
+    const latestReleaseJson = await response.json();
+    if (latestReleaseJson && latestReleaseJson?.name) {
+      // name = 0.8.0-alpha
+      // tag_name = v0.8.0-alpha
+      setFetchedLatestReleaseVersion(latestReleaseJson.name);
+    }
+  };
+
+  useEffect(() => {}, [sFetchedLatestReleaseVersion]);
+
+  useEffect(() => {
+    getLatestReleaseVersion();
+  }, []);
+
+  let releaseVersion = sFetchedLatestReleaseVersion
+    ? sFetchedLatestReleaseVersion
+    : DEFAULT_RELEASE_VERSION;
+  const DOWNLOAD_BASE = "https://github.com/jgresham/nice-node/releases";
+  const LINUX_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-${releaseVersion}.AppImage`;
+  const WINDOWS_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-Setup-${releaseVersion}.exe`;
+  const MACOS_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-${releaseVersion}-arm64.dmg`;
+  const MACOS_INTEL_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-${releaseVersion}.dmg`;
+  const ALL_DOWNLOADS = `${DOWNLOAD_BASE}/tag/v${releaseVersion}`;
+
   return (
     <Layout title="Downloads" description="Downloads Page">
       <div
@@ -36,12 +61,12 @@ export default function Downloads() {
           }}
         >
           <div>
-            <h1>Download NiceNode version {RELEASE_VERSION}</h1>
+            <h1>Download NiceNode version {releaseVersion}</h1>
           </div>
           <div>
             <span>
-              Please read the <Link to={"#requirements"}>requirements</Link> for
-              first-timers
+              Please read the <Link to={"#requirements"}>requirements</Link>{" "}
+              first
             </span>
           </div>
           <div
@@ -99,6 +124,7 @@ export default function Downloads() {
                   </div>
                 </Link>
               </div>
+              <span>*Try Control-click then "Open"</span>
             </div>
             <div style={{ margin: 5 }}>
               <div className={styles.buttons}>
@@ -112,6 +138,7 @@ export default function Downloads() {
                   </div>
                 </Link>
               </div>
+              <span>*Try Control-click then "Open"</span>
             </div>
             <div style={{ margin: 5 }}>
               <div className={styles.buttons}>
@@ -120,7 +147,7 @@ export default function Downloads() {
                   to={ALL_DOWNLOADS}
                 >
                   <div style={{ display: "flex", alignItems: "center" }}>
-                    {`All NiceNode ${RELEASE_VERSION} downloads`} &nbsp;
+                    {`All NiceNode ${releaseVersion} downloads`} &nbsp;
                     <FaExternalLinkAlt />
                   </div>
                 </Link>

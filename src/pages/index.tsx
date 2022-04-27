@@ -44,7 +44,7 @@ function HomepageHeader() {
             >
               requirements
             </Link>{" "}
-            for first-timers
+            first
           </span>
         </div>
       </div>
