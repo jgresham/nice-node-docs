@@ -75,6 +75,7 @@ const config = {
         },
         items: [
           { to: "/downloads", label: "Downloads", position: "left" },
+          { to: "/faq", label: "FAQ", position: "left" },
           // {
           //   type: "doc",
           //   docId: "intro",
@@ -88,7 +89,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://discord.gg/Juchd4th",
+            href: "https://discord.gg/k3dpYU4Pn9",
             label: "Discord",
             position: "right",
           },
@@ -109,6 +110,10 @@ const config = {
                 label: "Downloads",
                 to: "/downloads",
               },
+              {
+                label: "FAQ",
+                to: "/faq",
+              },
             ],
           },
           {
@@ -119,7 +124,7 @@ const config = {
                 href: "https://twitter.com/nicenodeapp",
               },
               {
-                href: "https://discord.gg/Juchd4th",
+                href: "https://discord.gg/k3dpYU4Pn9",
                 label: "Discord",
               },
               {
@@ -132,7 +137,7 @@ const config = {
             title: "Credits",
             items: [
               {
-                label: "Logo and image art from etehreum.org's William Tempest",
+                label: "Logo and image art from ethereum.org's William Tempest",
                 href: "https://ethereum.org/en/assets/#illustrations",
               },
               {
