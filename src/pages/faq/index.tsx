@@ -35,7 +35,7 @@ export default function FAQs() {
           </div>
         </div>
         <div>
-          <h3>What are the benefits of running our own nodes? What do I get out of this?</h3>
+          <h2>What are the benefits of running our own nodes? What do I get out of this?</h2>
           <p>
           In general, some of the benefits of running our own node are quoted as 
           “preserving privacy, security, reduced reliance on third-party servers, 
@@ -55,17 +55,17 @@ export default function FAQs() {
               <FaExternalLinkAlt />
             </a>
           </p>
-          <h3>Can I only run Ethereum nodes with this?</h3>
+          <h2>Can I only run Ethereum nodes with this?</h2>
           <p>
           Yes, NiceNode only supports Ethereum node software, and at the moment, geth node 
           client is only supported.
           </p>
-          <h3>Do I need 32 ETH to run a node?</h3>
+          <h2>Do I need 32 ETH to run a node?</h2>
           <p>
           You don’t need 32 ETH to run a node. As long as you have the hardware that fulfills
           the minimum requirements, you’re able to run your own full node at home!
           </p>
-          <h3>What types of nodes do you support?</h3>
+          <h2>What types of nodes do you support?</h2>
           <p>
           NiceNode currently supports full (snap sync mode by default) and light nodes.
           Archive node is planned to be supported in the future. 
@@ -92,17 +92,17 @@ export default function FAQs() {
               <FaExternalLinkAlt />
             </a>{" "}of some other nodes NiceNode would like to support!
           </p>
-          <h3>I don’t meet the requirements to run my own node. What can I do?</h3>
+          <h2>I don’t meet the requirements to run my own node. What can I do?</h2>
           <p>
           Even if you don’t meet the requirements, you might be able to run your own light
           node with NiceNode! However, because it is still an experimental feature, please
           only try it with funds you are willing to lose.
           </p>
-          <h3>How long will it take to sync my node?</h3>
+          <h2>How long will it take to sync my node?</h2>
           <p>
           Full node may take a few days to sync, depending on your bandwidth and hardware, and a light node may take a few minutes to fully sync.
           </p>
-          <h3>Can I use MetaMask with NiceNode light mode?</h3>
+          <h2>Can I use MetaMask with NiceNode light mode?</h2>
           <p>
             Light client mode is an <strong>experimental feature</strong>. Only
             use funds that you are willing to lose. Please read{" "}
@@ -116,7 +116,7 @@ export default function FAQs() {
             </a>{" "}
             before using!
           </p>
-          <h3>How can I use MetaMask with NiceNode?</h3>
+          <h2>How can I use MetaMask with NiceNode?</h2>
           <p>
             First, your node must be fully synced. Second, enable MetaMask
             connections from NiceNode {">"} Settings {">"} "Enable MetaMask
@@ -134,7 +134,7 @@ export default function FAQs() {
               <FaExternalLinkAlt />
             </a>
           </p>
-          <h3>Are there any plans to support consensus layer nodes? What other nodes will you support?</h3>
+          <h2>Are there any plans to support consensus layer nodes? What other nodes will you support?</h2>
           <p>
           Yes, consensus/beacon nodes will be implemented next, however, validation/staking has not
           been decided on yet. There will need to be extensive auditing before committing to doing so. Layer 2 nodes will also be supported eventually!
@@ -150,7 +150,7 @@ export default function FAQs() {
               <FaExternalLinkAlt />
             </a>{" "}of some other nodes NiceNode would like to support! 
           </p>
-          <h3>How does NiceNode differ from DAppNode?</h3>
+          <h2>How does NiceNode differ from DAppNode?</h2>
           <p>
           DAppNode requires users to install a new Operating System, but NiceNode works with 
           what’s installed on your computer right now. Once you download, and run NiceNode, 
@@ -167,7 +167,7 @@ export default function FAQs() {
               <FaExternalLinkAlt />
             </a>{" "}for additional DAppNode information.
           </p>
-          <h3>I have more questions!</h3>
+          <h2>I have more questions!</h2>
           <p>
           Feel free to come to the NiceNode discord with your questions 🙂
           </p>
