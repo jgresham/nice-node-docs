@@ -34,7 +34,7 @@ export default function FAQs() {
             <h1>Frequently Asked Questions</h1>
           </div>
         </div>
-        <div>
+        <div style={{ padding: "50px" }}>
           <h2>What are the benefits of running our own nodes? What do I get out of this?</h2>
           <p>
           In general, some of the benefits of running our own node are quoted as 
