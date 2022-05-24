@@ -1,0 +1,94 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the benefits of running our own nodes? What do I get out of this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>In general, some of the benefits of running our own node are quoted as “preserving privacy, security, reduced reliance on third-party servers, censorship resistance and improved health and decentralization of the network.”</p><p>Running a node is purely altruistic, so there are no financial rewards by running one!</p><p>Read more about it <a target='_blank' href='https://ethereum.org/en/developers/docs/nodes-and-clients/#why-should-i-run-an-ethereum-node' rel='noreferrer'>here <svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 512 512' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'></path></svg></a></p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I only run Ethereum nodes with this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Yes, NiceNode only supports Ethereum node software, and at the moment, geth node client is only supported.</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need 32 ETH to run a node?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>You don’t need 32 ETH to run a node. As long as you have the hardware that fulfills the minimum requirements, you’re able to run your own full node at home!</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of nodes do you support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>NiceNode currently supports full (snap sync mode by default) and light nodes. Archive node is planned to be supported in the future.</p><p>Read more about the different types of nodes <a target='_blank' href='https://ethereum.org/en/developers/docs/nodes-and-clients/#node-types' rel='noreferrer'>here <svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 512 512' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'></path></svg></a></p><p>See a <a target='_blank' href='https://twitter.com/SirJohnsGresham/status/1524805330726621184?s=20&amp;t=L0V7fA7IBEYK64zY6CeCow' rel='noreferrer'>screenshot <svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 512 512' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'></path></svg></a> of some other nodes NiceNode would like to support!</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I don’t meet the requirements to run my own node. What can I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Even if you don’t meet the requirements, you might be able to run your own light node with NiceNode! However, because it is still an experimental feature, please only try it with funds you are willing to lose.</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will it take to sync my node?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Full node may take a few days to sync, depending on your bandwidth and hardware, and a light node may take a few minutes to fully sync.</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use MetaMask with NiceNode light mode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Light client mode is an <strong>experimental feature</strong>. Only use funds that you are willing to lose. Please read <a target='_blank' href='https://geth.ethereum.org/docs/interface/les' rel='noreferrer'>Geth's light client guide <svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 512 512' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'></path></svg></a> before using!</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I use MetaMask with NiceNode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>First, your node must be fully synced. Second, enable MetaMask connections from NiceNode <&gt;> Settings &gt; “Enable MetaMask Connections”. Third, in MetaMask &gt; Add Network and enter “NiceNode localhost” with RPC URL “http://localhost:8545”. If your node is running and fully sycned, the Chain ID and other fields will be completed by MetaMask automatically and now click Save. For official info from MetaMask, follow <a target='_blank' href='https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node' rel='noreferrer'>MetaMask's local node guide <svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 512 512' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'></path></svg></a></p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there any plans to support consensus layer nodes? What other nodes will you support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Yes, consensus/beacon nodes will be implemented next, however, validation/staking has not been decided on yet. There will need to be extensive auditing before committing to doing so. Layer 2 nodes will also be supported eventually!</p><p>See a <a target='_blank' href='https://twitter.com/SirJohnsGresham/status/1524805330726621184?s=20&amp;t=L0V7fA7IBEYK64zY6CeCow' rel='noreferrer'>screenshot <svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 512 512' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'></path></svg></a> of some other nodes NiceNode would like to support!</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does NiceNode differ from DAppNode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>DAppNode requires users to install a new Operating System, but NiceNode works with what’s installed on your computer right now. Once you download, and run NiceNode, you’re good to go!</p><p>For other differences, please see <a target='_blank' href='https://dappnode.io/' rel='noreferrer'>https://dappnode.io/ <svg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 512 512' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'><path d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'></path></svg></a> for additional DAppNode information.</p>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I have more questions!",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>Feel free to come to the NiceNode discord with your questions 🙂</p>"
+      }
+    }
+  ]
+}
