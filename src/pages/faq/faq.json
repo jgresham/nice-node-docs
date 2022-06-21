@@ -15,7 +15,7 @@
       "name": "Can I only run Ethereum nodes with this?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "<p>Yes, NiceNode only supports Ethereum node software, and at the moment, geth node client is only supported.</p>"
+        "text": "<p>Yes, NiceNode only supports Ethereum node clients.</p>"
       }
     },
     {

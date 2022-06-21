@@ -63,8 +63,7 @@ export default function FAQs() {
           </p>
           <h2>Can I only run Ethereum nodes with this?</h2>
           <p>
-            Yes, NiceNode only supports Ethereum node software, and at the
-            moment, geth node client is only supported.
+            Yes, NiceNode only supports Ethereum node clients.
           </p>
           <h2>Do I need 32 ETH to run a node?</h2>
           <p>
