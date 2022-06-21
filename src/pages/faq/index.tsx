@@ -60,9 +60,7 @@ export default function FAQs() {
             </a>
           </p>
           <h2>Can I only run Ethereum nodes with this?</h2>
-          <p>
-            Yes, NiceNode only supports Ethereum node clients.
-          </p>
+          <p>Yes, NiceNode only supports Ethereum node clients.</p>
           <h2>Do I need 32 ETH to run a node?</h2>
           <p>
             You don’t need 32 ETH to run a node. As long as you have the
@@ -144,14 +142,16 @@ export default function FAQs() {
             </a>
           </p>
           <h2>
-            Are there any plans to support consensus layer nodes? What other
-            nodes will you support?
+            Are there any plans to support consensus layer nodes and staking
+            with validators?
           </h2>
           <p>
-            Yes, consensus/beacon nodes will be implemented next, however,
-            validation/staking has not been decided on yet. There will need to
-            be extensive auditing before committing to doing so. Layer 2 nodes
-            will also be supported eventually!
+            Yes, consensus/beacon nodes are available now! However, staking with
+            validators has not been implemented yet.
+          </p>
+          <h2>What other nodes will NiceNode support?</h2>
+          <p>
+            Layer 2 nodes and testnet nodes will be supported in future updates!
           </p>
           <p>
             See a{" "}
