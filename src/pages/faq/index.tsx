@@ -6,8 +6,6 @@ import styles from "../index.module.css";
 import { FaExternalLinkAlt, FaLinux } from "react-icons/fa";
 import faqJson from "@site/static/js/faq.json";
 
-const DEFAULT_RELEASE_VERSION = "0.8.0-alpha";
-
 export default function FAQs() {
   return (
     <Layout title="FAQ" description="FAQ">

@@ -8,7 +8,7 @@ import { FaApple } from "react-icons/fa";
 import screenshot from "@site/static/img/screenshot.png";
 import Requirements from "@site/src/components/Requirements";
 
-const DEFAULT_RELEASE_VERSION = "0.8.0-alpha";
+const DEFAULT_RELEASE_VERSION = "1.1.0-alpha";
 
 export default function Downloads() {
   const [sFetchedLatestReleaseVersion, setFetchedLatestReleaseVersion] =
@@ -37,6 +37,7 @@ export default function Downloads() {
     : DEFAULT_RELEASE_VERSION;
   const DOWNLOAD_BASE = "https://github.com/jgresham/nice-node/releases";
   const LINUX_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-${releaseVersion}.AppImage`;
+  const LINUX_DEBIAN = `${DOWNLOAD_BASE}/download/v${releaseVersion}/nice-node_${releaseVersion}_amd64.deb`;
   const WINDOWS_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-Setup-${releaseVersion}.exe`;
   const MACOS_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-${releaseVersion}-arm64.dmg`;
   const MACOS_INTEL_DOWNLOAD = `${DOWNLOAD_BASE}/download/v${releaseVersion}/NiceNode-${releaseVersion}.dmg`;
@@ -80,27 +81,6 @@ export default function Downloads() {
               <div className={styles.buttons}>
                 <Link
                   className="button button--secondary button--lg"
-                  to={LINUX_DOWNLOAD}
-                >
-                  <div style={{ display: "flex", alignItems: "center" }}>
-                    <FaLinux />
-                    &nbsp; {`Linux AppImage`}
-                  </div>
-                </Link>
-              </div>
-              <span>
-                *
-                <a href="https://github.com/TheAssassin/AppImageLauncher">
-                  AppImage Launcher{" "}
-                </a>
-                recommended
-              </span>
-            </div>
-
-            <div style={{ margin: 5 }}>
-              <div className={styles.buttons}>
-                <Link
-                  className="button button--secondary button--lg"
                   to={WINDOWS_DOWNLOAD}
                 >
                   <div style={{ display: "flex", alignItems: "center" }}>
@@ -139,6 +119,40 @@ export default function Downloads() {
                 </Link>
               </div>
               <span>*Try Control-click then "Open"</span>
+            </div>
+            <div style={{ margin: 5 }}>
+              <div className={styles.buttons}>
+                <Link
+                  className="button button--secondary button--lg"
+                  to={LINUX_DEBIAN}
+                >
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <FaLinux />
+                    &nbsp; {`Linux Debian`}
+                  </div>
+                </Link>
+              </div>
+              <span>*Open with "Software Install" on Ubuntu</span>
+            </div>
+            <div style={{ margin: 5 }}>
+              <div className={styles.buttons}>
+                <Link
+                  className="button button--secondary button--lg"
+                  to={LINUX_DOWNLOAD}
+                >
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <FaLinux />
+                    &nbsp; {`Linux AppImage`}
+                  </div>
+                </Link>
+              </div>
+              <span>
+                *
+                <a href="https://github.com/TheAssassin/AppImageLauncher">
+                  AppImage Launcher{" "}
+                </a>
+                recommended
+              </span>
             </div>
             <div style={{ margin: 5 }}>
               <div className={styles.buttons}>
