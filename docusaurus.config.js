@@ -54,8 +54,9 @@ const config = {
         textColor: "white",
         isCloseable: false,
       },
-      // Twitter card image
-      image: "img/NN_Twitter_Large_card.png",
+      // Twitter card image, should be 2x1 (width x height) ratio
+      //  with 40px edge buffer, and < 5MB file size
+      image: "img/NN_Twitter_Large_card.png?4",
       metadata: [
         {
           name: "twitter:title",
