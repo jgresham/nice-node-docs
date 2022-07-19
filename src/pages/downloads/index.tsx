@@ -8,7 +8,7 @@ import { FaApple } from "react-icons/fa";
 import screenshot from "@site/static/img/screenshot.png";
 import Requirements from "@site/src/components/Requirements";
 
-const DEFAULT_RELEASE_VERSION = "1.1.0-alpha";
+const DEFAULT_RELEASE_VERSION = "1.4.0-alpha";
 
 export default function Downloads() {
   const [sFetchedLatestReleaseVersion, setFetchedLatestReleaseVersion] =

@@ -9,6 +9,7 @@ import Requirements from "@site/src/components/Requirements";
 import screenshot from "@site/static/img/screenshot.png";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Why from "../components/Why";
+import SupportFrom from "../components/SupportFrom";
 
 // const screenshot = require("@site/static/img/screenshot.png");
 function HomepageHeader() {
@@ -63,6 +64,7 @@ export default function Home(): JSX.Element {
         <Requirements />
         <hr></hr>
         <Why />
+        <SupportFrom />
       </main>
     </Layout>
   );
