@@ -9,26 +9,32 @@ export default function SupportFrom(): JSX.Element {
     <section className={styles.features}>
       <h1 style={{color: 'white'}}>Support from</h1>
       <div style={{textAlign: 'center'}}>
-        <img
-          src={gitcoin}
-          alt="People interacting with Ethereum"
-          style={{
-            maxHeight: 100,
-            maxWidth: 200,
-            margin: 20,
-            // boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-          }}
-        />
-        <img
-          src={ethStaker}
-          alt="People interacting with Ethereum"
-          style={{
-            maxHeight: 100,
-            maxWidth: 200,
-            margin: 20,
-            // boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-          }}
-        />
+        <a 
+          href="https://gitcoin.co/grants/5959/nicenode-run-a-node-just-press-start"
+          target="_blank">
+            <img
+              src={gitcoin}
+              alt="Gitcoin logo"
+              style={{
+                maxHeight: 100,
+                maxWidth: 200,
+                margin: 20,
+              }}
+            />
+        </a>
+        <a 
+          href="https://qf.ethstaker.cc/#/project/0x223e89f10a3016a2aba4a5b13e9436ea63452cac1c76f0bc8644242e3c9fc584"
+          target="_blank">
+            <img
+              src={ethStaker}
+              alt="EthStaker logo"
+              style={{
+                maxHeight: 100,
+                maxWidth: 200,
+                margin: 20,
+              }}
+            />
+        </a>
       </div>
     </section>
   );
